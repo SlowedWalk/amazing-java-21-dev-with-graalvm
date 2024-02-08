@@ -1,0 +1,23 @@
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+  application:
+    name: amazing-java-dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/amazing-java-dev
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+  docker:
+    compose:
+      lifecycle-management: start_only
+#  ai:
+#    openai:
+#      # get it from environment variable
+#      api-key: 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
+
